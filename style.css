@@ -156,7 +156,7 @@ img {
     margin-right: auto;
 
     /* 1. FORCE THE IMAGE UPWARD */
-    margin-top: -165px;           /* Adjust this number (e.g., -100px, -200px) to pull it higher or lower */
+    margin-top: -170px;           /* Adjust this number (e.g., -100px, -200px) to pull it higher or lower */
 
     /* 2. COMBINE YOUR LEFT/RIGHT SHIFT WITH UP/DOWN SHIFT */
     transform: translateX(330px);
