@@ -1,0 +1,163 @@
+
+
+/* 2. RESET GLOBAL SPACING */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #32231A; /* MOVED HERE: Sets background perfectly without breaking layouts */
+}
+
+* {
+    /* REMOVED background-color from here to fix description flow & alignment */
+    box-sizing: border-box;
+}
+
+/* 3. NAVIGATION LAYOUT */
+.nav-links {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    list-style: none;
+    letter-spacing: 3px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+
+    padding: 10px 0 50px 0;
+    margin-right: 150px;
+    margin-top: 5px;
+}
+
+/* NAVIGATION LINKS */
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-bottom: 15.5px;
+}
+
+.nav-links a:hover {
+    color: #E6D7CB;
+}
+
+/* SIGN IN BUTTON */
+.nav-links a.btn-signin {
+    background-color: #FFFFFF;
+    color: #605349;
+
+    padding: 15px 17px;
+    text-align: center;
+    border-radius: 50px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    letter-spacing: 0;
+    height: 25px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+/* FIX: Changes both background and text color instantly when touched */
+
+/* 4. HORIZONTAL LINE DIVIDER */
+hr {
+    display: block;
+    border: none;
+    height: 2px;
+    background-color: #605349;
+
+    width: 100%;
+    max-width: 1423px;
+    margin: -60px auto 40px auto;
+}
+
+/* 5. TEXT HERO BLOCK */
+.texts {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: -500px; /* Pulls the text 40px upward */
+    align-items: flex-start; /* Ensures everything aligns cleanly to the left edge */
+}
+
+/* Small text above title */
+.small-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: white;
+    margin: 0 0 20px 0;
+}
+
+/* FIXED MAIN TITLE (Swapped to Oswald to match picture precisely) */
+.nav-time {
+    font-family: 'Bebas Neue', sans-serif; /* Changed to match your exact image design */
+    font-size: 64px;                   /* Increased font size to mirror the reference layout */
+    font-weight: 200;                  /* Bold style */
+    color: white;
+    letter-spacing: 20%;
+    line-height: 1.1;                  /* Compressed vertical line spacing */
+    margin: 0 0 20px 0;                /* Clean spacing below header */
+    text-transform: uppercase;
+}
+
+/* FIXED DESCRIPTION ALIGNMENT */
+.description {
+    width: 440px;                      /* Expanded slightly so words wrap naturally like your picture */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;                  /* Increases text tracking space for optimal reading layout */
+    color: #FFFFFF;                    /* Changed to soft beige to pull contrast from picture */
+    text-align: left;                  /* Standard left line formatting */
+    margin-bottom: 40px;
+}
+
+/* 6. SHOP NOW BUTTON */
+.shop-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 130px;                      /* Scaled button width slightly to make text breathe */
+    height: 46px;
+
+    border: 1px solid #605349;         /* Matches border outline color from target layout */
+    border-radius: 35px;
+
+    color: white;
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background-color: #605349;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* 1. FORCE THE IMAGE UPWARD */
+    margin-top: -165px;           /* Adjust this number (e.g., -100px, -200px) to pull it higher or lower */
+
+    /* 2. COMBINE YOUR LEFT/RIGHT SHIFT WITH UP/DOWN SHIFT */
+    transform: translateX(330px);
+}
